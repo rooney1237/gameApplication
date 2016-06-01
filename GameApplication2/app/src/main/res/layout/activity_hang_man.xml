@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.toshiba.gameapplication.HangMan">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:padding="15dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/common_signin_btn_dark_text_default"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Добре дошли в бесеница"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="false"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Отгатнете думата на противника:"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:textAlignment="center"
+        android:id="@+id/wordBox"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Използвани символи:"
+        android:id="@+id/usedChars"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/wordBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/wordBox"
+        android:layout_alignStart="@+id/wordBox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Оставащи опити:"
+        android:id="@+id/remaining"
+        android:layout_below="@+id/usedChars"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addChar"
+        android:layout_marginTop="19dp"
+        android:singleLine="true"
+        android:background="@color/common_signin_btn_light_text_disabled"
+        android:padding="10dp"
+        android:hint="Изберете за да добавите символ"
+        android:textAlignment="center"
+        android:maxLength="1"
+        android:layout_below="@+id/remaining"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добави"
+        android:id="@+id/addCharButton"
+        android:layout_below="@+id/addChar"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
